@@ -1,0 +1,32 @@
+ver2:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+
+  # Effort Controllers ---------------------------------------
+  left1_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: 1_wheel_hinge
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  right2_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: 2_wheel_hinge
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  left3_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: 3_wheel_hinge
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  right4_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: 4_wheel_hinge
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  left5_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: 5_wheel_hinge
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  right6_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: 6_wheel_hinge
+    pid: {p: 100.0, i: 0.1, d: 10.0}  
